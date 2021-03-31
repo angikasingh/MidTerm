@@ -6,5 +6,5 @@
 //
 
 import Foundation
-let apiKey = "40c82f93b89743358c9c413252330b14"
-let apiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=business"
+let apiKey = "9880b837c43934a8315f27fffd21d02f"
+let apiUrl = "https://api.covidtracking.com/v1/states/current.json"

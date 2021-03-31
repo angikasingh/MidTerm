@@ -9,6 +9,10 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblState: UILabel!
+    @IBOutlet weak var lblTotal: UILabel!
+    @IBOutlet weak var lblPositive: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -13,13 +13,17 @@
 		08094C7925E84D990093315B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08094C7725E84D990093315B /* Main.storyboard */; };
 		08094C7B25E84DA90093315B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08094C7A25E84DA90093315B /* Assets.xcassets */; };
 		08094C7E25E84DA90093315B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08094C7C25E84DA90093315B /* LaunchScreen.storyboard */; };
-		0884A69625E86E3700AB5BDA /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0884A69525E86E3700AB5BDA /* NewsTableViewController.swift */; };
+		0884A69625E86E3700AB5BDA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0884A69525E86E3700AB5BDA /* TableViewController.swift */; };
 		0884A69925E8731700AB5BDA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0884A69825E8731700AB5BDA /* Constant.swift */; };
-		31445B327DF0D2F7B21396EC /* Pods_GetNewsTitle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82C4CA7608A26BA02E5CC44 /* Pods_GetNewsTitle.framework */; };
+		0884A6B125F1D82A00AB5BDA /* CovidResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0884A6B025F1D82A00AB5BDA /* CovidResponse.swift */; };
+		0884A6C825F1E8D400AB5BDA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0884A6C625F1E8D400AB5BDA /* TableViewCell.swift */; };
+		0884A6C925F1E8D400AB5BDA /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0884A6C725F1E8D400AB5BDA /* TableViewCell.xib */; };
+		D29F013A51E9DE2D70661403 /* Pods_NetworkCallPromises.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB613B282D17D7A27FEE220E /* Pods_NetworkCallPromises.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		08094C6E25E84D990093315B /* GetNewsTitle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetNewsTitle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		050C27703D7FA24282267414 /* Pods-NetworkCallPromises.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCallPromises.debug.xcconfig"; path = "Target Support Files/Pods-NetworkCallPromises/Pods-NetworkCallPromises.debug.xcconfig"; sourceTree = "<group>"; };
+		08094C6E25E84D990093315B /* NetworkCallPromises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkCallPromises.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08094C7125E84D990093315B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08094C7325E84D990093315B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		08094C7525E84D990093315B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,11 +31,15 @@
 		08094C7A25E84DA90093315B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08094C7D25E84DA90093315B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08094C7F25E84DA90093315B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0884A69525E86E3700AB5BDA /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		0884A69525E86E3700AB5BDA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		0884A69825E8731700AB5BDA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		0884A6B025F1D82A00AB5BDA /* CovidResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidResponse.swift; sourceTree = "<group>"; };
+		0884A6C625F1E8D400AB5BDA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0884A6C725F1E8D400AB5BDA /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		1934E3E6193616ED0B02437D /* Pods-GetNewsTitle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetNewsTitle.debug.xcconfig"; path = "Target Support Files/Pods-GetNewsTitle/Pods-GetNewsTitle.debug.xcconfig"; sourceTree = "<group>"; };
+		4689D8B75ECCC7902767B60E /* Pods-NetworkCallPromises.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCallPromises.release.xcconfig"; path = "Target Support Files/Pods-NetworkCallPromises/Pods-NetworkCallPromises.release.xcconfig"; sourceTree = "<group>"; };
 		610301CAC9C7F4650231AFCD /* Pods-GetNewsTitle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetNewsTitle.release.xcconfig"; path = "Target Support Files/Pods-GetNewsTitle/Pods-GetNewsTitle.release.xcconfig"; sourceTree = "<group>"; };
-		A82C4CA7608A26BA02E5CC44 /* Pods_GetNewsTitle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetNewsTitle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB613B282D17D7A27FEE220E /* Pods_NetworkCallPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkCallPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31445B327DF0D2F7B21396EC /* Pods_GetNewsTitle.framework in Frameworks */,
+				D29F013A51E9DE2D70661403 /* Pods_NetworkCallPromises.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +57,7 @@
 		08094C6525E84D990093315B = {
 			isa = PBXGroup;
 			children = (
-				08094C7025E84D990093315B /* GetNewsTitle */,
+				08094C7025E84D990093315B /* NetworkCallPromises */,
 				08094C6F25E84D990093315B /* Products */,
 				EFEE2AEDB062B85226DA37A2 /* Pods */,
 				7BA383BB331C72791C3D4EB6 /* Frameworks */,
@@ -59,12 +67,12 @@
 		08094C6F25E84D990093315B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				08094C6E25E84D990093315B /* GetNewsTitle.app */,
+				08094C6E25E84D990093315B /* NetworkCallPromises.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		08094C7025E84D990093315B /* GetNewsTitle */ = {
+		08094C7025E84D990093315B /* NetworkCallPromises */ = {
 			isa = PBXGroup;
 			children = (
 				08094C7125E84D990093315B /* AppDelegate.swift */,
@@ -74,16 +82,19 @@
 				08094C7A25E84DA90093315B /* Assets.xcassets */,
 				08094C7C25E84DA90093315B /* LaunchScreen.storyboard */,
 				08094C7F25E84DA90093315B /* Info.plist */,
-				0884A69525E86E3700AB5BDA /* NewsTableViewController.swift */,
+				0884A69525E86E3700AB5BDA /* TableViewController.swift */,
 				0884A69825E8731700AB5BDA /* Constant.swift */,
+				0884A6B025F1D82A00AB5BDA /* CovidResponse.swift */,
+				0884A6C625F1E8D400AB5BDA /* TableViewCell.swift */,
+				0884A6C725F1E8D400AB5BDA /* TableViewCell.xib */,
 			);
-			path = GetNewsTitle;
+			path = NetworkCallPromises;
 			sourceTree = "<group>";
 		};
 		7BA383BB331C72791C3D4EB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A82C4CA7608A26BA02E5CC44 /* Pods_GetNewsTitle.framework */,
+				CB613B282D17D7A27FEE220E /* Pods_NetworkCallPromises.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,6 +104,8 @@
 			children = (
 				1934E3E6193616ED0B02437D /* Pods-GetNewsTitle.debug.xcconfig */,
 				610301CAC9C7F4650231AFCD /* Pods-GetNewsTitle.release.xcconfig */,
+				050C27703D7FA24282267414 /* Pods-NetworkCallPromises.debug.xcconfig */,
+				4689D8B75ECCC7902767B60E /* Pods-NetworkCallPromises.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -100,9 +113,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		08094C6D25E84D990093315B /* GetNewsTitle */ = {
+		08094C6D25E84D990093315B /* NetworkCallPromises */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08094C8225E84DA90093315B /* Build configuration list for PBXNativeTarget "GetNewsTitle" */;
+			buildConfigurationList = 08094C8225E84DA90093315B /* Build configuration list for PBXNativeTarget "NetworkCallPromises" */;
 			buildPhases = (
 				E3187426F61AC46FF84ADBAE /* [CP] Check Pods Manifest.lock */,
 				08094C6A25E84D990093315B /* Sources */,
@@ -114,9 +127,9 @@
 			);
 			dependencies = (
 			);
-			name = GetNewsTitle;
+			name = NetworkCallPromises;
 			productName = GetNewsTitle;
-			productReference = 08094C6E25E84D990093315B /* GetNewsTitle.app */;
+			productReference = 08094C6E25E84D990093315B /* NetworkCallPromises.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +146,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 08094C6925E84D990093315B /* Build configuration list for PBXProject "GetNewsTitle" */;
+			buildConfigurationList = 08094C6925E84D990093315B /* Build configuration list for PBXProject "NetworkCallPromises" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,7 +159,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				08094C6D25E84D990093315B /* GetNewsTitle */,
+				08094C6D25E84D990093315B /* NetworkCallPromises */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08094C7E25E84DA90093315B /* LaunchScreen.storyboard in Resources */,
+				0884A6C925F1E8D400AB5BDA /* TableViewCell.xib in Resources */,
 				08094C7B25E84DA90093315B /* Assets.xcassets in Resources */,
 				08094C7925E84D990093315B /* Main.storyboard in Resources */,
 			);
@@ -171,15 +185,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GetNewsTitle/Pods-GetNewsTitle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkCallPromises/Pods-NetworkCallPromises-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GetNewsTitle/Pods-GetNewsTitle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkCallPromises/Pods-NetworkCallPromises-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GetNewsTitle/Pods-GetNewsTitle-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetworkCallPromises/Pods-NetworkCallPromises-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E3187426F61AC46FF84ADBAE /* [CP] Check Pods Manifest.lock */ = {
@@ -197,7 +211,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GetNewsTitle-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NetworkCallPromises-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -211,10 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0884A69625E86E3700AB5BDA /* NewsTableViewController.swift in Sources */,
+				0884A69625E86E3700AB5BDA /* TableViewController.swift in Sources */,
+				0884A6B125F1D82A00AB5BDA /* CovidResponse.swift in Sources */,
 				08094C7625E84D990093315B /* ViewController.swift in Sources */,
 				0884A69925E8731700AB5BDA /* Constant.swift in Sources */,
 				08094C7225E84D990093315B /* AppDelegate.swift in Sources */,
+				0884A6C825F1E8D400AB5BDA /* TableViewCell.swift in Sources */,
 				08094C7425E84D990093315B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,18 +375,18 @@
 		};
 		08094C8325E84DA90093315B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1934E3E6193616ED0B02437D /* Pods-GetNewsTitle.debug.xcconfig */;
+			baseConfigurationReference = 050C27703D7FA24282267414 /* Pods-NetworkCallPromises.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G8P8HY255N;
-				INFOPLIST_FILE = GetNewsTitle/Info.plist;
+				INFOPLIST_FILE = NetworkCallPromises/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.northeastern.singh.GetNewsTitle;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northeastern.singh.NetworkCallPromises;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,18 +395,18 @@
 		};
 		08094C8425E84DA90093315B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 610301CAC9C7F4650231AFCD /* Pods-GetNewsTitle.release.xcconfig */;
+			baseConfigurationReference = 4689D8B75ECCC7902767B60E /* Pods-NetworkCallPromises.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G8P8HY255N;
-				INFOPLIST_FILE = GetNewsTitle/Info.plist;
+				INFOPLIST_FILE = NetworkCallPromises/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.northeastern.singh.GetNewsTitle;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northeastern.singh.NetworkCallPromises;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -400,7 +416,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		08094C6925E84D990093315B /* Build configuration list for PBXProject "GetNewsTitle" */ = {
+		08094C6925E84D990093315B /* Build configuration list for PBXProject "NetworkCallPromises" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08094C8025E84DA90093315B /* Debug */,
@@ -409,7 +425,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		08094C8225E84DA90093315B /* Build configuration list for PBXNativeTarget "GetNewsTitle" */ = {
+		08094C8225E84DA90093315B /* Build configuration list for PBXNativeTarget "NetworkCallPromises" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08094C8325E84DA90093315B /* Debug */,

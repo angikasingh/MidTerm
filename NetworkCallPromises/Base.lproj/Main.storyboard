@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--News Table View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="o3c-k1-6Te">
             <objects>
-                <tableViewController id="7bO-gM-oOa" customClass="NewsTableViewController" customModule="GetNewsTitle" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="7bO-gM-oOa" customClass="TableViewController" customModule="NetworkCallPromises" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vm1-KQ-83l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

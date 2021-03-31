@@ -9,10 +9,11 @@ import UIKit
 import Alamofire
 import SwiftSpinner
 import SwiftyJSON
+import PromiseKit
 
-class NewsTableViewController:
+class TableViewController:
     UITableViewController {
-    var newsarr: [String] = [String]()
+    var arr: [CovidResponse] = [CovidResponse]()
     @IBOutlet var table: UITableView!
     
     override func viewDidLoad() {
@@ -25,41 +26,64 @@ class NewsTableViewController:
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return newsarr.count
+        return arr.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
-        cell.textLabel?.text = newsarr[indexPath.row]
-
+        let cell = Bundle.main.loadNibNamed("TableViewCell", owner: self, options: nil)?.first as! TableViewCell
+        cell.lblState.text = arr[indexPath.row].state
+        cell.lblTotal.text = "\(arr[indexPath.row].total)"
+        cell.lblPositive.text = "\(arr[indexPath.row].positive)"
         return cell
     }
     
     func getURL() -> String {
-        var url = apiUrl
-        url.append("&apiKey=")
-        url.append(apiKey)
-        return url
+        return apiUrl
     }
 
     func getData() {
         let url = getURL()
-        SwiftSpinner.show("Fetching News")
-        AF.request(url).responseJSON { response in
-            SwiftSpinner.hide()
-            if response.error == nil {
-                let news: JSON = JSON(response.data!)
-                for (_, article) in news["articles"] {
-                    self.newsarr.append(article["title"].stringValue)
-                }
-            } else {
-                print("Error")
-                print(response.error!)
+        SwiftSpinner.show("Fetching Covid-19 results")
+        getValue(url: url)
+            .done { (commodities) in
+                self.arr = commodities
+                self.table.reloadData()
             }
-            
-            self.table.reloadData()
+            .catch { (error) in
+                print("error")
+                print(error)
+            }
+    }
+    
+    func getValue(url : String) -> Promise<[CovidResponse]> {
+        return Promise<[CovidResponse]> { seal -> Void in
+            AF.request(url).responseJSON { response in
+                SwiftSpinner.hide()
+                if response.error == nil {
+                    guard let data = response.data else {
+                        return seal.fulfill([CovidResponse]())
+                    }
+                    guard let results = JSON(data).array else {
+                        return seal.fulfill([CovidResponse]())
+                    }
+                    
+                    var arr: [CovidResponse] = [CovidResponse]()
+                    
+                    for result in results {
+                        let covidResponse : CovidResponse = CovidResponse()
+                        covidResponse.state = result["state"].stringValue
+                        covidResponse.total = result["total"].intValue
+                        covidResponse.positive = result["positive"].intValue
+                        arr.append(covidResponse)
+                    }
+                    seal.fulfill(arr)
+                } else {
+                    seal.reject(response.error!)
+                }
+                
+                self.table.reloadData()
+            }
         }
     }
 }

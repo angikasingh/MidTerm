@@ -7,4 +7,8 @@
 
 import Foundation
 
-class
+class CovidResponse {
+    var state : String = ""
+    var total : Int = 0
+    var positive : Int = 0
+}
