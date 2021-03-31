@@ -46,8 +46,8 @@ class TableViewController:
         let url = getURL()
         SwiftSpinner.show("Fetching Covid-19 results")
         getValue(url: url)
-            .done { (commodities) in
-                self.arr = commodities
+            .done { (results) in
+                self.arr = results
                 self.table.reloadData()
             }
             .catch { (error) in
